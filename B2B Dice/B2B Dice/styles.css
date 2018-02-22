@@ -1,0 +1,398 @@
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+.page-title {
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+textarea {
+    resize: none;
+}
+
+i.no_selection, ul.no_selection {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.pagerCtrl {
+    text-align: center;
+    padding-top: 5px
+}
+
+    .pagerCtrl ul {
+        list-style: none;
+    }
+
+        .pagerCtrl ul li {
+            display: inline;
+        }
+
+    .pagerCtrl a {
+        cursor: pointer;
+    }
+
+/* Purchase Orders */
+.applicationStep {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    width: 90%;
+    float: left;
+    overflow: hidden
+}
+
+.display-results {
+    position: relative;
+    top: -40px
+}
+
+.accordion-toggle {
+    margin-left: 10px;
+}
+
+.panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\2212";
+    float: left;
+    color: grey;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\2b";
+}
+
+.trackingInfo {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.complete {
+    background-color: chartreuse;
+    color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.successful {
+    background-color: green;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.inProgress {
+    background-color: orange;
+    color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.upcoming {
+    background-color: #333333;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.failed {
+    background-color: red;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+/* NavBar */
+.clearfix::after, .dl-horizontal dd::after, .container::after, .container-fluid::after, .row::after, .form-horizontal .form-group::after, .btn-toolbar::after, .btn-group-vertical > .btn-group::after, .nav::after, .navbar::after, .navbar-header::after, .navbar-collapse::after, .pager::after, .panel-body::after, .modal-footer::after {
+    clear: both;
+}
+
+.clearfix::before, .clearfix::after, .dl-horizontal dd::before, .dl-horizontal dd::after, .container::before, .container::after, .container-fluid::before, .container-fluid::after, .row::before, .row::after, .form-horizontal .form-group::before, .form-horizontal .form-group::after, .btn-toolbar::before, .btn-toolbar::after, .btn-group-vertical > .btn-group::before, .btn-group-vertical > .btn-group::after, .nav::before, .nav::after, .navbar::before, .navbar::after, .navbar-header::before, .navbar-header::after, .navbar-collapse::before, .navbar-collapse::after, .pager::before, .pager::after, .panel-body::before, .panel-body::after, .modal-footer::before, .modal-footer::after {
+    display: table;
+    content: " ";
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup, var, b, u, i, center, dl, dt, dd,
+ol, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, button, table, caption, tbody,
+tfoot, thead, tr, th, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu,
+nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+body {
+    color: #333;
+    background-color: #eee;
+}
+
+header, footer {
+    font-size: 13px;
+    line-height: 1.3em;
+}
+
+main {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dell-blue-background {
+    background: #0085c3;
+}
+
+.dell-gray-background {
+    background: #eee;
+}
+
+.dell-white-background {
+    background: #fff;
+}
+
+.dell-layout-main-container {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.dell-layout-row {
+    margin: 0 auto;
+}
+
+.dell-layout-row-content {
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: top;
+    clear: both;
+}
+
+.horizontal-list,
+.vertical-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.horizontal-list li {
+    float: left;
+}
+
+.col-md-3 {
+    float: left;
+    width: 25%;
+    height: auto;
+    overflow: auto;
+}
+
+.dell-loading-image {
+    width: 20px;
+    height: 20px;
+    background: url('Assets/loading_animation.gif') no-repeat;
+    display: inline-block;
+}
+
+.uif_mastHead_standard {
+    line-height: 1.3em;
+    min-width: 1080px;
+}
+
+.primaryLink {
+    position: relative;
+    float: left;
+    height: 71px;
+}
+
+    .primaryLink a:hover {
+        filter: alpha(opacity=60);
+        opacity: 0.6;
+    }
+
+.mh {
+    position: relative;
+}
+
+    .mh .tierNav {
+        display: table-cell;
+        z-index: 100;
+        -ms-zoom: 1;
+        zoom: 1;
+        height: 71px;
+    }
+
+    .mh .primaryLevelMenu {
+        float: left;
+        margin: 0 0 0 35px;
+        height: 71px;
+        line-height: 71px;
+        text-align: left;
+    }
+
+.primaryLink > a, .primaryLink > a:hover, .primaryLink > a:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.mh .topNav {
+    display: table;
+}
+
+.mh .mhNav {
+    display: table-row;
+}
+
+.t1Nav {
+    min-width: 370px;
+}
+
+.mhLogo {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 11px;
+    width: 49px;
+    height: 49px;
+    padding: 10px 0 0 26px;
+}
+
+    .mhLogo img {
+        border: none;
+        width: 49px;
+        height: 49px;
+    }
+
+.tier2 .mNav, .tier2 li a {
+    color: #0085c3;
+    font-size: 14px;
+    margin: 20px 0;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.subnav-list li:first-child .secondaryLink {
+    margin-left: 0;
+}
+
+.subnav-list > ul > li {
+    min-width: 130px;
+    width: auto;
+    max-width: 180px;
+}
+
+.primaryLevelMenu.active .subNav,
+.secondLevelMenu.active .thirdNav {
+    display: block;
+}
+
+.subNav,
+.thirdNav {
+    position: absolute;
+    top: 71px;
+    z-index: 200;
+    left: 0;
+    right: 0;
+}
+
+.srch {
+    display: table-cell;
+    vertical-align: middle;
+    height: 56px;
+    white-space: nowrap;
+}
+
+.mhSearch {
+    display: table;
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    position: relative;
+}
+
+    .mhSearch .searchInputs {
+        display: table-row;
+    }
+
+.searchInputs div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.searchInputs input {
+    margin-left: 9px;
+    width: 90%;
+    border: none;
+    font-size: 14px;
+    color: #727272;
+}
+
+.mhSearch input:focus {
+    outline: none;
+}
+
+.mhSearch .searchBtn {
+    display: table-cell;
+    text-align: right;
+}
+
+.searchBtn button {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #0085c3;
+    background-repeat: repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0085c3), to(#0f6eca));
+    background-image: -webkit-linear-gradient(top, #0085c3, #0f6eca);
+    background-image: -moz-linear-gradient(top, #0085c3, #0f6eca);
+    background-image: -o-linear-gradient(top, #0085c3, #0f6eca);
+    background-image: linear-gradient(to bottom, #0085c3, #0f6eca);
+    -moz-border-image: none;
+    -o-border-image: none;
+    -webkit-border-image: none;
+    border-image: none;
+    border-radius: 3px 3px 3px 3px;
+    border: solid 1px #fff;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 34px;
+    margin: 3px;
+    padding: 9px 10px;
+    text-align: left;
+    vertical-align: middle;
+}

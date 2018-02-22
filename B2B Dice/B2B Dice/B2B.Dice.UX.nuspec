@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>B2B.Dice.UX</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Autobots</authors>
+    <owners>Autobots</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The B2B.Dice.UX deployment package</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>B2B Dice UX</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\PublishOutput\*.*" target="bin\Release\PublishOutput\" />
+    <file src="bin\Release\PublishOutput\assets\*.*" target="bin\Release\PublishOutput\assets\" />
+    <file src="bin\*.*" target="bin\Release\PublishOutput\bin\" />
+    <file src="bin\roslyn\*.*" target="bin\Release\PublishOutput\bin\roslyn\" />
+    <file src="Web.config" target="bin\Release\PublishOutput\" />
+    <file src="Global.asax" target="bin\Release\PublishOutput\" />
+  </files>
+</package>

@@ -1,0 +1,13 @@
+﻿<ul>
+    <li *ngFor="let key of arrayOfKeys">
+        <label for="field">{{key}} - </label>
+        <tree-node *ngIf="childObjects.indexOf(key) != -1" [node]="node[key]"></tree-node>
+        <div *ngIf="childArrays.indexOf(key) != -1">
+            <div *ngFor="let value of node[key]">
+                <tree-node [node]="value"></tree-node><br />
+            </div>
+        </div>
+        <!--<input id="field" *ngIf="childObjects.indexOf(key) == -1 && childArrays.indexOf(key) == -1" type="text" [(ngModel)]="node[key]" style="width:30%">-->
+        <span *ngIf="childObjects.indexOf(key) == -1 && childArrays.indexOf(key) == -1">{{node[key]}}</span>
+    </li>
+</ul>

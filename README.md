@@ -1,2 +1,2 @@
-# dice-practice
-Practice Dice App - Chris Allen
+# ux.dice
+UX for data ingestion and collection engine

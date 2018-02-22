@@ -1,0 +1,59 @@
+<header class="uif_mastHead_standard clearfix" id="revidHeader">
+    <nav dell-modal-popup-triggers class="mh dell-layout-row">
+        <div class="dell-layout-row-content clearfix topNav">
+            <div class="mhNav">
+                <div style="float:right;margin:5px" *ngIf="username">Welcome {{username}}</div>
+            </div>
+        </div>
+    </nav>
+    <nav dell-modal-popup-triggers class="mh dell-blue-background dell-layout-row">
+        <div class="row" style="margin:0px">
+            <div class="col-sm-2" style="height: 71px;">
+                <img style="float:left; max-height: 100%; padding:15px" src="../../Assets/dice.png"><br />
+                <h3 class="page-title">B2B DICE</h3>
+                <h4 class="page-title">{{pageTitle}}</h4>
+            </div>
+            <div class="col-sm-8">
+                <div class="dell-layout-row-content clearfix topNav">
+                    <div class="mhNav">
+                        <a title="Dell" class="mhLogo" href="">
+                            <img id="imgmhbluelogo" alt="Dell Logo" src="//i.dell.com/images/global/brand/ui/logo-wt-bl.png">
+                        </a>
+                        <div class="tierNav">
+                            <ul class="t1Nav horizontal-list">
+                                <li id="{{link.Id}}" class="primaryLevelMenu" *ngFor="let link of headerLinks">
+                                    <div class="primaryLink">
+                                        <a class="mNav" routerLink="{{link.Href}}" onclick="this.blur();">{{link.Text}}</a>
+                                        <span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="srch">
+                            <form id="search-next-search-form" class="mhSearch" name="search">
+                                <div class="searchInputs">
+                                    <div style="height: 40px">
+                                        <input id="search-next-search-box" type="search" name="q" size="20"
+                                               [(ngModel)]="purchaseOrderNum" class="ui-autocomplete-input"
+                                               placeholder="Track PO" autocomplete="off" role="textbox"
+                                               (keyup.enter)="searchPO(purchaseOrderNum)" />
+                                        <span *ngIf="purchaseOrderNum" (click)="clearPO()" uib-tooltip="clear"
+                                              style="cursor: pointer; pointer-events: all; top: 3px; right: 25px"
+                                              class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                        <span (click)="searchPO(purchaseOrderNum)" uib-tooltip="clear"
+                                              style="cursor: pointer; pointer-events: all; top: 3px; right: 5px"
+                                              class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        <!--<a title="Track PO" href="/#/track/purchase-orders?poNum={{purchaseOrderNum}}"
+                                           target="_blank">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </a>-->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header> 

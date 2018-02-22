@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="ordNo">PO Number:</label><br />
+            <div class="form-group has-feedback">
+                <input (keyup.enter)="trackPurchaseOrder(purchaseOrderNum)" [(ngModel)]="purchaseOrderNum"
+                       id="ordNo" class="form-control ng-tns-c0-0 ui-inputtext ui-widget ui-state-default ui-corner-all"
+                       style="width:100%">
+                <span *ngIf="purchaseOrderNum" (click)="clearPO()" uib-tooltip="clear"
+                      class="glyphicon glyphicon-remove form-control-feedback"
+                      style="cursor: pointer; pointer-events: all;"></span>
+            </div>
+            <button type="button" class="btn btn-info" (click)="trackPurchaseOrder(purchaseOrderNum)">
+                Track Order
+            </button>
+            <i *ngIf="resultsLoading" style="position:relative;top:6px;left:5px" class="dell-loading-image"></i>
+            <br /><br />
+            <div *ngIf="showNoResults" class="alert alert-danger">
+                No PO found
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="form-group">
+                <div *ngIf="showResults">
+                    <div *ngFor="let purchaseOrder of purchaseOrders">
+                        <business-flow [po]="purchaseOrder" [disableDetails]="false"></business-flow>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>

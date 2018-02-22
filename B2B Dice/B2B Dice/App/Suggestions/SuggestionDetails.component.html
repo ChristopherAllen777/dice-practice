@@ -1,0 +1,85 @@
+﻿<div class="container-fluid" (mouseup)="togglePress(null, false)">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div *ngIf="showLoading" style="text-align: center"><br /><br /><i class="dell-loading-image"></i></div>
+            <div *ngIf="showDetails">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h2 style="margin-top:10px">{{suggestion.Title}}</h2>
+                    </div>
+                    <div class="col-sm-1" style="text-align:center;">
+                        <label style="font-size:x-large;line-height:50px" [ngStyle]="getTextColor(suggestion.ApprovalRate)">
+                            {{suggestion.ApprovalRate | percent:'2.1-2'}}
+                        </label>
+                    </div>
+                    <div class="col-sm-1" style="text-align:center;">
+                        <span style="cursor: pointer;" (click)="voteSuggestion(true)">
+                            <button type="button" class="btn" [ngStyle]="getBackgroundColor(true)"
+                                    onclick="this.blur();" (mousedown)="togglePress(true, true)">
+                                <i class="glyphicon glyphicon-thumbs-up no_selection"
+                                   style="margin-left:5px;font-size:30px;top:3px"></i>
+                            </button>
+                        </span><br />
+                        <label>{{suggestion.Upvotes}}</label>
+                    </div>
+                    <div class="col-sm-1" style="text-align:center;">
+                        <span style="cursor: pointer;" (click)="voteSuggestion(false)">
+                            <button type="button" class="btn" [ngStyle]="getBackgroundColor(false)"
+                                    onclick="this.blur();" (mousedown)="togglePress(false, true)">
+                                <i class="glyphicon glyphicon-thumbs-down no_selection"
+                                   style="margin-left:5px;font-size:30px;top:3px"></i>
+                            </button>
+                        </span><br />
+                        <label>{{suggestion.Downvotes}}</label>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="background-color:#f9f9f9">
+                    <div style="width:95%;margin: 5px auto;">
+                        {{suggestion.Description}}
+                        <br /><br />
+                        <span style="float:right;">
+                            <label>{{suggestion.CreatedBy}}</label> @
+                            <label>{{suggestion.CreatedDate}}</label>
+                        </span>
+                        <br />
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div *ngIf="suggestion.Comments.length > 0">
+                        <label>Comments:</label>
+                        <div *ngFor="let comment of suggestion.Comments; let i = index" class="panel panel-default"
+                             style="background-color:#f9f9f9">
+                            <div style="width:95%;margin: 5px auto;">
+                                {{comment.Text}}
+                                <br /><br />
+                                <span style="float:right;">
+                                    <label>{{comment.CommentedBy}}</label> @
+                                    <label>{{comment.Date}}</label>
+                                </span>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group has-feedback">
+                        <label>New Comment:</label>
+                        <textarea id="newComment" type="text" [(ngModel)]="newComment" placeholder="Enter Comment Text"
+                                  class="form-control ng-tns-c0-0 ui-inputtext ui-widget ui-state-default ui-corner-all"
+                                  rows="3" style="width:100%;background-color:aliceblue"></textarea>
+                        <span *ngIf="newComment" (click)="clearComment()" uib-tooltip="clear"
+                              class="glyphicon glyphicon-remove form-control-feedback"
+                              style="cursor: pointer; pointer-events: all;"></span>
+                        <br />
+                        <button type="button" class="btn btn-info" (click)="addComment()">
+                            Add
+                            <i class="glyphicon glyphicon-plus" style="margin-left:5px"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>

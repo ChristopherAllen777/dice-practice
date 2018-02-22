@@ -1,0 +1,20 @@
+﻿<div class="row">
+    <div *ngIf="trackingInfo">
+        <div>Tracking Number: {{trackingInfo.TrackingNumber}}</div>
+        <div>Expected Delivery Date: {{trackingInfo.ExpectedDeliveryDate | date:'fullDate'}}</div><br />
+        <div class="trackingInfo">
+            <div class="row" style="margin: 0; background-color: #0085c3; color: white;">
+                <div class="col-sm-4">DATE & TIME</div>
+                <div class="col-sm-4">STATUS OF ITEM</div>
+                <div class="col-sm-4">LOCATION</div>
+            </div>
+            <div *ngFor="let progress of trackingInfo.ProgressSteps; let i = index">
+                <div class="row" style="margin: 0; background-color: #eeeeee;" [ngStyle]="isLatestTrackingStep(i)">
+                    <div class="col-sm-4">{{progress.Date | date:'MMMM d, y, h:mm a'}}</div>
+                    <div class="col-sm-4">{{progress.Status}}</div>
+                    <div class="col-sm-4">{{progress.Location}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
