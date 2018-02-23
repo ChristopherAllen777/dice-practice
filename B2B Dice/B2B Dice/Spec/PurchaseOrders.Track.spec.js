@@ -20,7 +20,7 @@ var http_1 = require("@angular/http");
 var Observable_1 = require("rxjs/Observable");
 require("rxjs/add/operator/map");
 require("rxjs/add/observable/of");
-var MockPurchaseOrdersService = (function (_super) {
+var MockPurchaseOrdersService = /** @class */ (function (_super) {
     __extends(MockPurchaseOrdersService, _super);
     function MockPurchaseOrdersService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

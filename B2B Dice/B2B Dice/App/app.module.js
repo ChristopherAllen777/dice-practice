@@ -30,21 +30,21 @@ var animations_1 = require("@angular/platform-browser/animations");
 var ng2_auto_complete_1 = require("ng2-auto-complete");
 var app_routes_1 = require("./app.routes");
 var Safe_pipe_1 = require("./Common/Safe.pipe");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, app_routes_1.routing, primeng_1.CalendarModule, animations_1.BrowserAnimationsModule, ng2_dragula_1.DragulaModule,
+                ng2_auto_complete_1.Ng2AutoCompleteModule],
+            declarations: [app_component_1.AppComponent, PurchaseOrders_Track_component_1.PurchaseOrdersTrackComponent, PurchaseOrders_Browse_component_1.PurchaseOrdersBrowseComponent, Filters_component_1.FiltersComponent,
+                Customers_component_1.CustomersComponent, Analytics_component_1.AnalyticsComponent, NavBar_component_1.NavBarComponent, TrackingInfo_component_1.TrackingInfoComponent, PurchaseOrders_BusinessFlow_component_1.BusinessFlowComponent,
+                Customers_Display_component_1.CustomersDisplayComponent, TreeNode_component_1.TreeNodeComponent, PurchaseOrders_Browse_Display_component_1.PurchaseOrdersBrowseDisplayComponent, Suggestions_component_1.SuggestionsComponent,
+                SuggestionDetails_component_1.SuggestionDetailsComponent, Safe_pipe_1.SafePipe],
+            bootstrap: [app_component_1.AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, app_routes_1.routing, primeng_1.CalendarModule, animations_1.BrowserAnimationsModule, ng2_dragula_1.DragulaModule,
-            ng2_auto_complete_1.Ng2AutoCompleteModule],
-        declarations: [app_component_1.AppComponent, PurchaseOrders_Track_component_1.PurchaseOrdersTrackComponent, PurchaseOrders_Browse_component_1.PurchaseOrdersBrowseComponent, Filters_component_1.FiltersComponent,
-            Customers_component_1.CustomersComponent, Analytics_component_1.AnalyticsComponent, NavBar_component_1.NavBarComponent, TrackingInfo_component_1.TrackingInfoComponent, PurchaseOrders_BusinessFlow_component_1.BusinessFlowComponent,
-            Customers_Display_component_1.CustomersDisplayComponent, TreeNode_component_1.TreeNodeComponent, PurchaseOrders_Browse_Display_component_1.PurchaseOrdersBrowseDisplayComponent, Suggestions_component_1.SuggestionsComponent,
-            SuggestionDetails_component_1.SuggestionDetailsComponent, Safe_pipe_1.SafePipe],
-        bootstrap: [app_component_1.AppComponent]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

@@ -178,6 +178,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Common\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -191,6 +192,7 @@
     <TypeScriptCompile Include="App\augmentation.ts" />
     <TypeScriptCompile Include="App\main.ts" />
     <TypeScriptCompile Include="App\polyfills.ts" />
+    <TypeScriptCompile Include="App\vendor.ts" />
     <TypeScriptCompile Include="Spec\CommonData.service.spec.ts" />
     <TypeScriptCompile Include="Spec\PurchaseOrders.Track.spec.ts" />
     <TypeScriptCompile Include="Spec\PurchaseOrders.service.spec.ts" />

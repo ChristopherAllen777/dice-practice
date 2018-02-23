@@ -12,24 +12,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var CommonData_service_1 = require("./Common/CommonData.service");
 var PurchaseOrders_service_1 = require("./PurchaseOrders/PurchaseOrders.service");
-var TrackingInfo_service_1 = require("./TrackingInfo/TrackingInfo.service");
 var MetricsService_service_1 = require("./Common/MetricsService.service");
 var Profile_service_1 = require("./Profile/Profile.service");
 var Excel_service_1 = require("./Common/Excel.service");
 var Pager_service_1 = require("./Common/Pager.service");
-var AppComponent = (function () {
+var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'my-app',
+            template: "<my-nav></my-nav><br />\n                <router-outlet></router-outlet>",
+            providers: [PurchaseOrders_service_1.PurchaseOrderService, TrackingInfoService, CommonData_service_1.CommonDataService, MetricsService_service_1.MetricsService, Profile_service_1.ProfileService,
+                Excel_service_1.ExcelService, Pager_service_1.PagerService]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        template: "<my-nav></my-nav><br />\n                <router-outlet></router-outlet>",
-        providers: [PurchaseOrders_service_1.PurchaseOrdersService, TrackingInfo_service_1.TrackingInfoService, CommonData_service_1.CommonDataService, MetricsService_service_1.MetricsService, Profile_service_1.ProfileService,
-            Excel_service_1.ExcelService, Pager_service_1.PagerService]
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
