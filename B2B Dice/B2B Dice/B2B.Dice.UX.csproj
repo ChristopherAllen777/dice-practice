@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\Analytics\Analytics.component.html" />
+    <Content Include="App\Common\TreeNode.component.html" />
     <Content Include="App\helpers.js" />
     <Content Include="Assets\close-button.png" />
     <Content Include="Assets\dice.png" />
@@ -202,6 +203,9 @@
     <TypeScriptCompile Include="App\Common\CONSTANTS.ts" />
     <TypeScriptCompile Include="App\Common\Excel.service.ts" />
     <TypeScriptCompile Include="App\Common\Metric.ts" />
+    <TypeScriptCompile Include="App\Common\MetricsService.service.ts" />
+    <TypeScriptCompile Include="App\Common\Pager.service.ts" />
+    <TypeScriptCompile Include="App\Common\Safe.pipe.ts" />
     <TypeScriptCompile Include="App\main.ts" />
     <TypeScriptCompile Include="App\polyfills.ts" />
     <TypeScriptCompile Include="App\vendor.ts" />
