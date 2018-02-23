@@ -14,7 +14,7 @@ import { PagerService } from './Common/Pager.service';
     providers: [PurchaseOrderService, TrackingInfoService, CommonDataService, MetricsService, ProfileService,
         ExcelService, PagerService]
 })
-export class AppComponent {
+export class AppComponent { 
     constructor() {
 
     }
