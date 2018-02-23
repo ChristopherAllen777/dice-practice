@@ -84,20 +84,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\Analytics\Analytics.component.html" />
-    <Content Include="App\Common\TreeNode.component.html" />
-    <Content Include="App\Customers\Customers.component.html" />
-    <Content Include="App\Customers\Customers.Display.component.html" />
-    <Content Include="App\Filters\Filters.component.html" />
-    <Content Include="App\helpers.js" />
-    <Content Include="App\NavBar\NavBar.component.html" />
-    <Content Include="App\PurchaseOrders\PurchaseOrders.Browse.component.html" />
-    <Content Include="App\PurchaseOrders\PurchaseOrders.Browse.Display.component.html" />
-    <Content Include="App\PurchaseOrders\PurchaseOrders.BusinessFlow.component.html" />
-    <Content Include="App\PurchaseOrders\PurchaseOrders.Track.component.html" />
-    <Content Include="App\Suggestions\SuggestionDetails.component.html" />
-    <Content Include="App\Suggestions\Suggestions.component.html" />
-    <Content Include="App\TrackingInfo\TrackingInfo.component.html" />
     <Content Include="Assets\close-button.png" />
     <Content Include="Assets\dice.png" />
     <Content Include="Assets\favicon.ico" />
@@ -198,42 +184,11 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="App\Analytics\Analytics.component.ts" />
     <TypeScriptCompile Include="App\app.component.ts" />
     <TypeScriptCompile Include="App\app.module.ts" />
-    <TypeScriptCompile Include="App\app.routes.ts" />
     <TypeScriptCompile Include="App\augmentation.ts" />
-    <TypeScriptCompile Include="App\Common\CommonData.service.ts" />
-    <TypeScriptCompile Include="App\Common\CONSTANTS.ts" />
-    <TypeScriptCompile Include="App\Common\Excel.service.ts" />
-    <TypeScriptCompile Include="App\Common\Pager.service.ts" />
-    <TypeScriptCompile Include="App\Common\Metric.ts" />
-    <TypeScriptCompile Include="App\Common\MetricsService.service.ts" />
-    <TypeScriptCompile Include="App\Common\Safe.pipe.ts" />
-    <TypeScriptCompile Include="App\Common\TreeNode.component.ts" />
-    <TypeScriptCompile Include="App\Customers\Customers.component.ts" />
-    <TypeScriptCompile Include="App\Customers\Customers.Display.component.ts" />
-    <TypeScriptCompile Include="App\Filters\Filters.component.ts" />
     <TypeScriptCompile Include="App\main.ts" />
-    <TypeScriptCompile Include="App\NavBar\HeaderLink.ts" />
-    <TypeScriptCompile Include="App\NavBar\NavBar.component.ts" />
     <TypeScriptCompile Include="App\polyfills.ts" />
-    <TypeScriptCompile Include="App\Filters\Filters.ts" />
-    <TypeScriptCompile Include="App\Profile\Profile.service.ts" />
-    <TypeScriptCompile Include="App\Profile\Profile.ts" />
-    <TypeScriptCompile Include="App\PurchaseOrders\PurchaseOrders.Browse.Display.component.ts" />
-    <TypeScriptCompile Include="App\PurchaseOrders\PurchaseOrder.ts" />
-    <TypeScriptCompile Include="App\PurchaseOrders\PurchaseOrders.Browse.component.ts" />
-    <TypeScriptCompile Include="App\PurchaseOrders\PurchaseOrders.BusinessFlow.component.ts" />
-    <TypeScriptCompile Include="App\PurchaseOrders\PurchaseOrders.Track.component.ts" />
-    <TypeScriptCompile Include="App\PurchaseOrders\PurchaseOrders.service.ts" />
-    <TypeScriptCompile Include="App\Suggestions\Suggestion.ts" />
-    <TypeScriptCompile Include="App\Suggestions\SuggestionDetails.component.ts" />
-    <TypeScriptCompile Include="App\Suggestions\Suggestions.component.ts" />
-    <TypeScriptCompile Include="App\TrackingInfo\TrackingInfo.component.ts" />
-    <TypeScriptCompile Include="App\TrackingInfo\TrackingInfo.service.ts" />
-    <TypeScriptCompile Include="App\TrackingInfo\TrackingInfo.ts" />
-    <TypeScriptCompile Include="App\vendor.ts" />
     <TypeScriptCompile Include="Spec\CommonData.service.spec.ts" />
     <TypeScriptCompile Include="Spec\PurchaseOrders.Track.spec.ts" />
     <TypeScriptCompile Include="Spec\PurchaseOrders.service.spec.ts" />
