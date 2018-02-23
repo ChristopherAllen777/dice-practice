@@ -179,7 +179,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Common\" />
     <Folder Include="App\Customers\" />
     <Folder Include="App\Filters\" />
     <Folder Include="App\NavBar\" />
@@ -199,6 +198,10 @@
     <TypeScriptCompile Include="App\app.module.ts" />
     <TypeScriptCompile Include="App\app.routes.ts" />
     <TypeScriptCompile Include="App\augmentation.ts" />
+    <TypeScriptCompile Include="App\Common\CommonData.service.ts" />
+    <TypeScriptCompile Include="App\Common\CONSTANTS.ts" />
+    <TypeScriptCompile Include="App\Common\Excel.service.ts" />
+    <TypeScriptCompile Include="App\Common\Metric.ts" />
     <TypeScriptCompile Include="App\main.ts" />
     <TypeScriptCompile Include="App\polyfills.ts" />
     <TypeScriptCompile Include="App\vendor.ts" />
