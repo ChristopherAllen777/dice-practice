@@ -10,7 +10,7 @@ import { PagerService } from './Common/Pager.service';
 @Component({
     selector: 'my-app',
     template: `<my-nav></my-nav><br />
-                <router-outlet></router-outlet`,
+                <router-outlet></router-outlet>`,
     providers: [PurchaseOrderService, TrackingInfoService, CommonDataService, MetricsService, ProfileService,
         ExcelService, PagerService]
 })
