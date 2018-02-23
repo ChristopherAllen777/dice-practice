@@ -17,5 +17,5 @@ import { PagerService } from './Common/Pager.service';
 export class AppComponent { 
     constructor() {
          
-    }
+    } 
 }
