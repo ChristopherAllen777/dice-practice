@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Analytics\Analytics.component.html" />
     <Content Include="App\helpers.js" />
     <Content Include="Assets\close-button.png" />
     <Content Include="Assets\dice.png" />
@@ -179,6 +180,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\Common\" />
+    <Folder Include="App\Customers\" />
+    <Folder Include="App\Filters\" />
+    <Folder Include="App\NavBar\" />
+    <Folder Include="App\Profile\" />
+    <Folder Include="App\PurchaseOrders\" />
+    <Folder Include="App\Suggestions\" />
+    <Folder Include="App\TrackingInfo\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -186,6 +194,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="App\Analytics\Analytics.component.ts" />
     <TypeScriptCompile Include="App\app.component.ts" />
     <TypeScriptCompile Include="App\app.module.ts" />
     <TypeScriptCompile Include="App\app.routes.ts" />
